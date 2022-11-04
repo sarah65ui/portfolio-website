@@ -1,0 +1,106 @@
+/* colors used:
+  primary colors:
+    white: rgb(225,225,225) 100 #ffffff
+    black: rbg(209,209,209) 100 #151515
+    medium turquoise: rgb(59,222,222) 100 #3BDEDE
+secondary colors
+    medium turquoise low opacity: rgb(59,222,222,0.29) #3BDEDE
+    dark turquoise(verdigris):  rgb(44,169,169) 100 #2ca9a9
+    light grey:  rgb(209,209,209) 100 #d1d1d1
+    dark grey(onyx): rgb(69,69,69) 100 #454545
+  portfolio work colors:
+    yellow (craftbin): rgb(254,189,59) 100 #FEBD3B
+    light salmon (foodfinds): rgb(253,169,135) 100 #FDA987
+    middle blue (foodfinds):  rgb(127,187,195) 100 #7FBBC3
+    silvery grey (cultured, rainydaysavings): rgb(238,238,238) 100 #EEEEEE
+    blue (rainydaysavings): rgb(0,8,255) 100 #0008FF
+    ksu purple (texting app): rgb(89,27,144) 100 #591B90
+    verdigris (turquoise texting app): rgb(9,170,175) 100  #09AAAF */
+    /* custom logo sizing */
+
+    p, span, ul {
+      font-family: 'source sans pro', sans-serif;
+      font size: 16px;
+      font weight: 300;
+      line-height: 1.6;
+      color:#151515
+    }
+
+
+    header{
+      font-family: 'cormorant', serif;
+      font-size: 16px; /* Sets the font size to 16px */
+      font-weight: 300; /* Sets the font weight to 300 */
+      line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+      color:#151515;
+
+    }
+    .body {
+  font-family: 'cormorant', serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color:#151515;
+}
+
+
+.h1, .h2, .h3, .h4 {
+  line-height: 1.4;
+}
+.h1 {
+  font-size: 2.074em;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 1.728em;
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: 1.44em;
+  font-weight: 400;
+}
+.h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.button{
+  display: inline-block;
+   background-color: #ffffff;
+   color: #151515;
+   font-weight: 400;
+   padding: 10px;
+   border-radius: 20px;
+   border: 2.5px solid #3BDEDE;
+   transition: 0.2s opacity;
+}
+header{
+  background-color:#ffffff
+}
+main {
+  background-color:#ffffff
+}
+footer{
+  background-color: #3BDEDE
+}
+footer,h2{
+  color:#ffffff
+}
+.email{
+  display: inline-block;
+   background-color: #3BDEDE;
+   color: #151515;
+   font-weight: 400;
+   padding: 10px;
+   border-radius: 20px;
+   border: 2.5px solid #ffffff;
+   transition: 0.2s opacity;
+}
+#logo {
+  width: 150px;
+  height: auto;
+}
+img {
+width: 100%;
+}
