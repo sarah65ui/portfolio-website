@@ -17,7 +17,9 @@ secondary colors
     ksu purple (texting app): rgb(89,27,144) 100 #591B90
     verdigris (turquoise texting app): rgb(9,170,175) 100  #09AAAF */
     /* custom logo sizing */
-
+    * {
+      box-sizing: border-box;
+    }
     p, span, ul {
       font-family: 'source sans pro', sans-serif;
       font size: 16px;
@@ -84,7 +86,7 @@ main {
 footer{
   background-color: #3BDEDE
 }
-footer,h2{
+#contact h2{
   color:#ffffff
 }
 .email{
@@ -97,10 +99,85 @@ footer,h2{
    border: 2.5px solid #ffffff;
    transition: 0.2s opacity;
 }
-#logo {
-  width: 150px;
-  height: auto;
+#mylogo {
+ max-width: 250px;
 }
 img {
 width: 100%;
+}
+header {
+  position: fixed;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  /*border-bottom: 1px solid #151515;*/
+  box-shadow: 0px 5px 8px 0px rgba(51, 50, 50, 0.48);
+  width: 100%
+}
+#body {
+  margin: 30px auto;
+}
+#behance{
+  width: 30px;
+  height:auto;
+}
+#instagram{
+  width: 30px;
+  height:auto;
+}
+#linkedin {
+  width: 30px;
+  height: auto;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.center {
+  text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #151515;
+}
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 140px;
+}
+#socialmedialinks> ul {
+  list-style-type: none;
+  padding: 0;
+}
+#socialmedialinks> ul > li {
+  display: inline-block;
+}
+#socialmedialinks> ul > li > a {
+  padding: 0 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #151515;
+}
+.maincb{
+  background-color: #eeeeee
+}
+img{
+  border-radius: 20px;
 }
