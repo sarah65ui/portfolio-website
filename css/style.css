@@ -51,12 +51,12 @@ secondary colors
 }
 .h1 {
   font-size: 2.074em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .h2 {
   font-size: 1.728em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .h3 {
@@ -114,9 +114,6 @@ header {
   box-shadow: 0px 5px 8px 0px rgba(51, 50, 50, 0.48);
   width: 100%
 }
-#body {
-  margin: 30px auto;
-}
 #behance{
   width: 30px;
   height:auto;
@@ -160,7 +157,9 @@ nav > ul > li > a {
   width: 100%;
 }
 main {
-  padding-top: 140px;
+  padding-top: 168px;
+  margin-left: 21px;
+  margin-right: 21px;
 }
 #socialmedialinks> ul {
   list-style-type: none;
@@ -175,9 +174,18 @@ main {
   font-weight: 400;
   color: #151515;
 }
-.maincb{
-  background-color: #eeeeee
-}
-img{
+#cbpicture img{
   border-radius: 20px;
+}
+#rdspicture img{
+  border-radius: 20px;
+}
+#tapicture img{
+  border-radius: 20px;
+}
+#ffpicture img{
+  border-radius: 20px;
+}
+#myphoto img{
+ border-radius: 20px;
 }
