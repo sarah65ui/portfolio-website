@@ -20,7 +20,7 @@ secondary colors
     * {
       box-sizing: border-box;
     }
-    p, span, ul {
+    p, ul {
       font-family: 'source sans pro', sans-serif;
       font size: 16px;
       font weight: 300;
@@ -152,26 +152,24 @@ nav > ul > li > a {
 }
 #hero {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 0px;
   display: inline-block;
   width: 100%;
 }
 main {
   padding-top: 168px;
-  margin-left: 21px;
-  margin-right: 21px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #socialmedialinks> ul {
   list-style-type: none;
-  padding: 0;
+  padding: 15;
 }
 #socialmedialinks> ul > li {
   display: inline-block;
 }
 #socialmedialinks> ul > li > a {
   padding: 0 60px;
-  text-transform: uppercase;
-  font-weight: 400;
   color: #151515;
 }
 #cbpicture img{
@@ -188,4 +186,33 @@ main {
 }
 #myphoto img{
  border-radius: 20px;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px
+  }
+  #navpages {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
