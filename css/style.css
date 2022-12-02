@@ -72,10 +72,15 @@ secondary colors
    background-color: #ffffff;
    color: #151515;
    font-weight: 400;
+   text-decoration: none;
    padding: 10px;
    border-radius: 20px;
    border: 2.5px solid #3BDEDE;
    transition: 0.2s opacity;
+}
+.button:hover {
+  background-color:#d1d1d1;
+  opacity: 0.5;
 }
 header{
   background-color:#ffffff
@@ -84,7 +89,9 @@ main {
   background-color:#ffffff
 }
 footer{
-  background-color: #3BDEDE
+  background-color: #3BDEDE;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 #contact h2{
   color:#ffffff
@@ -94,10 +101,24 @@ footer{
    background-color: #3BDEDE;
    color: #151515;
    font-weight: 400;
+   text-decoration: none;
    padding: 10px;
    border-radius: 20px;
    border: 2.5px solid #ffffff;
    transition: 0.2s opacity;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   transition: 0.2s opacity;
+}
+.email:hover {
+  background-color:#2ca9a9;
+  opacity: 0.5;
+}
+li > a{
+  transition: 0.2s opacity;
+}
+li > a:hover{
+  text-decoration: underline;
 }
 #mylogo {
  max-width: 250px;
@@ -117,19 +138,23 @@ header {
 #behance{
   width: 30px;
   height:auto;
+  margin: 0 15px 0 0;
 }
 #instagram{
   width: 30px;
   height:auto;
+
 }
 #linkedin {
   width: 30px;
   height: auto;
+  margin: 0 15px 0 0;
 }
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 15px;
+  padding-top: 5px;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -149,6 +174,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 400;
   color: #151515;
+  text-decoration: none;
 }
 #hero {
   background-color: #ffffff;
@@ -156,20 +182,22 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
 }
+#hero span {
+  display: block;
+}
 main {
-  padding-top: 168px;
+  padding-top: 180px;
   margin-left: 10px;
   margin-right: 10px;
 }
 #socialmedialinks> ul {
   list-style-type: none;
-  padding: 15;
+  padding: 0;
 }
 #socialmedialinks> ul > li {
   display: inline-block;
 }
 #socialmedialinks> ul > li > a {
-  padding: 0 60px;
   color: #151515;
 }
 #cbpicture img{
@@ -187,6 +215,33 @@ main {
 #myphoto img{
  border-radius: 20px;
 }
+.animation{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -195,24 +250,70 @@ Medium devices (640px and larger)
   text-align: unset;
   padding: 20px 0 13px
   }
-  #navpages {
+  #nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 40px;
   }
+  p, ul {
+    font-family: 'source sans pro', sans-serif;
+    font size: 18px;
+    font weight: 300;
+    line-height: 1.6;
+    color:#151515
+  }
+  .col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p, ul {
+  font-family: 'source sans pro', sans-serif;
+  font size: 20px;
+  font weight: 300;
+  line-height: 1.6;
+  color:#151515
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  p, ul {
+    font-family: 'source sans pro', sans-serif;
+    font size: 22px;
+    font weight: 300;
+    line-height: 1.6;
+    color:#151515
+  }
 }
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+  p, ul {
+    font-family: 'source sans pro', sans-serif;
+    font size: 24px;
+    font weight: 300;
+    line-height: 1.6;
+    color:#151515
+  }
 }

@@ -17,14 +17,11 @@
   <body id="body">
     <header id="header">
         <div class="container">
-      <div id="nav">
-        <nav id="navlogo">
           <a href="index.html">
               <img id="mylogo"
               src="img/website_photos/favicon_logo_nbg.2x.png" alt="my logo">
           </a>
-        </nav>
-        <nav id="navpages">
+        <nav id="nav">
           <ul>
             <li><a href="index.html">My Work</a></li>
             <li><a href="about.html">About</a></li>
@@ -32,7 +29,6 @@
           </ul>
         </nav>
        </div>
-      </div>
     </header>
     <main id="aboutmain">
         <div class="container">
@@ -41,8 +37,8 @@
           <h1 class="center">About</h1>
         </div>
       </div>
-      <div id="aboutcontent"> <!--content-->
-        <div id="myphoto">
+      <div class="row" id="aboutcontent"> <!--content-->
+        <div class="col-md-6 col-lg-7" id="myphoto">
           <picture>
             <source srcset="img/website_photos/profile_mobile.2x.jpg" media="(max-width: 767px)">
              <img src="img/website_photos/profile_mobile.2x.jpg" alt="my photo">
@@ -50,18 +46,21 @@
         </div>
             <div id="abouttext">
               <div>
+                <div class="col-md-6 col-lg-5">
                 <h2 class="center">My Story</h2>
                 <p>I live in a small  town in south florida  surrounded by family. I moved to Florida in 2021 after growing up in New York. I started working on art in school where I learned to use watercolor paints. For years art and anything creative was a passion but only a hobby. Eventually it only made sense to explore creative fields for my career. I’ve always been interested in technology and was leaning towards  a career in graphic design so when I explored the UI world I was immediately drawn in. Looking at portfolio work and seeing the creative possibility cemented in me that this is the path I wanted to take. I decided to join an online bootcamp to get certified and fell in love with the process and the work I was getting to create.
                 </p>
+              </div>
                 <div class="center">
                 <a href="files/cv.pdf" class="button" target="_blank">MY RESUME</a>
                 </div>
               </div>
               <div id="skilsandtools">
                 <h2 class="center">Skills and Tools</h2>
-                  <div>
+                  <div class="row">
+                      <div class="col-md-6 col-lg-7">
                     <div id="skills">
-                      <h3 class="center">Skills</h3>
+                      <h3>Skills</h3>
                         <ul>
                           <li>UI design</li>
                           <li>Mock ups</li>
@@ -71,8 +70,10 @@
                           <li>branding</li>
                         </ul>
                     </div>
+                      </div>
+                      <div class="col-md-6 col-lg-5">
                     <div id="tools">
-                      <h3 class="center">Tools</h3>
+                      <h3>Tools</h3>
                         <ul>
                           <li>Figma</li>
                           <li>Adobe XD</li>
@@ -80,6 +81,7 @@
                           <li>Adobe Photo Shop</li>
                           <li>Invision</li>
                         </ul>
+                    </div>
                     </div>
                   </div>
               </div>
@@ -89,15 +91,14 @@
     </main>
     <footer id="contact">
         <div class="container">
-      <div id="footertext">
-        <h2 class="center">Get in Touch</h2>
-        <p>do you like my work and are you intrested in discussing opportunites? Please get in touch</p>
-        </div>
+      <div  class="center" id="footertext">
+        <h2>Get in Touch</h2>
+          <p>Do you like my work and are you intrested in discussing opportunites? Please get in touch</p>
         <div class="center">
           <a href="mailto:Saraheschwartz17@gmail.com" class="email">Email Me</a>
         </div>
         <div id="socialmedialinks"><!--Social Media Layout and Placeholders-->
-          <ul>
+          <ul class="center">
             <li id="linkedin"><a href="https://www.linkedin.com/in/sarah-schwartz-62335822a/" target="_blank">
               <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"/>
             </svg>
